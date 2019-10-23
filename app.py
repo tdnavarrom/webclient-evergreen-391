@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 tiposIndicador = ['Estrés hídrico', 'Nitrógeno foliar', 'Índice cosecha', 'Densidad volumétrica radial']
 
-@app.route("/crearIndicador", methods=['GET'])
+@app.route("/", methods=['GET'])
 def crearIndicador():
     return render_template('CrearIndicador.html', listaTipos = tiposIndicador)
 
